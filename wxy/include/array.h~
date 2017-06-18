@@ -1,0 +1,14 @@
+#ifndef _TREE_H
+#define _TREE_H
+
+void InitStack(SqStack *S);
+void DestroyStack(SqStack *S);
+void ClearStack(SqStack *S);
+void StackEmpty(SqStack S);
+int StackLength(SqStack S);
+int GetTop(SqStack S);
+void Push(SqStack *S,int e);
+int Pop(SqStack *S);
+void StackTraverse(SqStack S);
+
+#endif

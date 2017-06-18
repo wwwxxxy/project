@@ -1,0 +1,16 @@
+# cat adduser.sh
+#!/bin/bash
+#chmod 700 adduser.sh
+#./useradd.sh
+for user in 'cat username'
+	useradd -m $user
+	echo $user"abcd" | passwd --stdin $user
+	echo "user$i $pw" >> /root/pw.txt
+	echo "user$pw" |passwd --stdin user
+done
+/*do
+	adduser -d /home/wxy/$username -m $username
+	chpasswd < username.txt
+	echo "redhat" |passwd --stdin $username
+	echo "$user create success!"
+done*/
